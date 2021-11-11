@@ -1,0 +1,397 @@
+<!doctype html>
+<br lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></head>
+<title>twinkle/cakeshop</title> 
+<style>
+    body {
+        background-color: rgb(91, 147, 204);
+    }
+ 
+ div.center {
+  text-decoration: dashed;
+}
+img {
+  vertical-align: text-bottom;
+}
+h1 {
+     font-size: 100px;
+     text-indent: 20px;
+     color: rgb(244, 244, 248);
+     text-align: justify;
+     font-family: fantasy;
+     line-height: 0.8;
+     width: 200px;
+     text-shadow: 2px 4px 3px black;
+     height: 20px;
+  margin-right: 150px;
+  margin-left: 90px;   
+ }
+ h3 {
+    font-size: x-large;
+     text-indent: 100px;
+     color: rgb(253, 253, 255);
+     text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 5.8;
+    width: 220px;
+    padding: 10px 125px;
+    text-shadow: 2px 4px 3px black;
+    height: 40px;
+    width: ;
+    margin-right: 150px;
+  margin-left: 80px;
+}
+* {
+  box-sizing: border-box;
+}
+.img-container {
+  float: left;
+  width: 23.33%;
+  margin-left: 7px;
+  border: 7px solid rgb(248, 247, 247);
+  border-radius: 20px;
+  margin: 12px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+  margin-top: 40px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  overflow: hidden;
+  background-color: palevioletred;
+}
+li {
+  float: right;
+  border-right: 1px solid #bbb;
+}
+li a {
+  display:  inline-block;
+  color: rgb(8, 7, 7);
+  text-align: center;
+  padding: 14px 50px ;
+  margin: 5px 20px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color:rgb(228, 63, 132) ;
+}
+.active {
+  background-color:rgb(253, 251, 251);
+}
+.logo {
+  float: left;
+  width: 5.33%;
+  margin-left: 7px;
+
+}
+.my-button { background-color: palevioletred;
+    color: white;
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow: 5px 5px 5px black;
+    box-sizing: border-box;
+    text-align: center;
+    display: block;
+    border-radius: 10px;
+    float: left;
+    position: relative;
+    left: 150px;
+}
+   
+.my-button2 {
+    background-color: palevioletred;
+    color: white;
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow: 5px 5px 5px black;
+    box-sizing: border-box;
+    text-align: center;
+    display:  inline-block;
+    border-radius: 10px;
+    float: left;
+    position: relative;
+    left: 315px;
+    top: 0px;
+}
+   
+.my-button3 {
+    background-color: palevioletred;
+    color: white;
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow: 5px 5px 5px black;
+    box-sizing: border-box;
+    text-align: center;
+    display:  inline-block;
+    border-radius: 10px;
+    float: left;
+    position: relative;
+    left: 400px;
+    
+   
+}
+.my-button4 {
+    background-color: palevioletred;
+    color: white;
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow: 5px 5px 5px black;
+    box-sizing: border-box;
+    text-align: center;
+    display: block;
+    border-radius: 10px;
+    float: left;
+    position: relative;
+    left: 540px;
+    
+}
+.my-button:active {
+  background-color: rgb(230, 139, 169);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.my-button2:active {
+  background-color:rgb(230, 139, 169);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.my-button3:active {
+  background-color: rgb(230, 139, 169);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.my-button4:active {
+  background-color:rgb(230, 139, 169);
+  transform: translateY(4px);
+}
+.my-buttonA {
+  background-color: palevioletred;
+    color: white;
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow: 5px 5px 5px black;
+    box-sizing: border-box;
+    text-align: center;
+    display:  inline-block;
+    border-radius: 10px;
+    float: left;
+    position: relative;
+    left: 88px;
+    top: 0px;
+}
+.my-buttonB {
+  background-color: palevioletred;
+    color: white;
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow: 5px 5px 5px black;
+    box-sizing: border-box;
+    text-align: center;
+    display:  inline-block;
+    border-radius: 10px;
+    float: left;
+    position: relative;
+    left: 190px;
+    top: 0px;
+}
+.my-buttonC {
+  background-color: palevioletred;
+    color: white;
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow: 5px 5px 5px black;
+    box-sizing: border-box;
+    text-align: center;
+    display:  inline-block;
+    border-radius: 10px;
+    float: left;
+    position: relative;
+    left: 360px;
+    top: 0px;
+}
+.my-buttonD {
+  background-color: palevioletred;
+    color: white;
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow: 5px 5px 5px black;
+    box-sizing: border-box;
+    text-align: center;
+    display:  inline-block;
+    border-radius: 10px;
+    float: left;
+    position: relative;
+    left: 495px;
+    top: 0px;
+}
+.my-buttonA:active {
+  background-color: rgb(230, 139, 169);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.my-buttonB:active {
+  background-color: rgb(230, 139, 169);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.my-buttonC:active {
+  background-color: rgb(230, 139, 169);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.my-buttonD:active {
+  background-color: rgb(230, 139, 169);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.sec1 {
+  color: rgb(15, 14, 14);
+}
+
+
+
+
+
+
+</style>
+<body> 
+    <ul>
+        <li><a href="juliet.html" class="active">Home</a></li>
+        <li><a href="an page2.html">Our products</a></li>
+        <li><a href="anotherpage.html">who are we</a></li> 
+        <li><a href="delivery.html">Delivery</a></li>
+              
+      </ul>
+
+      <br>
+      <div class="logo"><img src="Untitled.png"></div>
+
+    
+ <h1>Twinkle</h1>
+ <h3>cakeshop</h3> 
+ <br>
+ <br>
+ <br></br>
+ <div class="clearfix">
+    <div class="img-container">
+    <img src="photo_2021-10-08_23-31-29.jpg"  style="width:100%">
+    </div>
+    <div class="img-container">
+    <img src="juliet.y"  style="width:100%">
+    </div>
+    <div class="img-container">
+    <img src="photo_2021-10-08_23-31-24.jpg"  style="width:100%">
+    </div>
+    <div class="img-container">
+        <img src="photo_5.jpg" style="width:100%">
+        </div>
+  </div>
+
+  <a class="my-button" href="button1.html">Apple Pie</a>
+  <a class="my-button2" href="button2.html">Strawberry Berry Cheesecake</a>
+  <a class="my-button3" href="button3.html">Pistachio Chocolate Clusters</a>
+  <a class="my-button4" href="button4.html">Mini Cheesecake</a>
+
+      <br></br>
+      <br></br>
+      <br></br>
+
+      <div class="clearfix">
+        <div class="img-container">
+        <img src="photo_2021-10-26_13-55-30.jpg"  style="width:100%">
+        </div>
+        <div class="img-container">
+        <img src="photo-1.jpg" style="width:100%">
+        </div>
+        <div class="img-container">
+        <img src="photo_2021-10-26_13-56-21.jpg"  style="width:100%">
+        </div>
+        <div class="img-container">
+            <img src="photo_2.jpg"  style="width:100%">
+            </div>
+      </div>
+      <a class="my-buttonA" href="button5.html">Gingerbread Cookies</a>
+      <a class="my-buttonB" href="button6.html">Pistachio Chocolate Cheesecake</a>
+      <a class="my-buttonC" href="button7.html">Orio Truffle</a>
+      <a class="my-buttonD" href="button8.html">Chocolate Strawberry Cheesecake</a>
+     
+
+
+          <br></br>
+          <br></br>
+
+
+        
+              <div class="bg-white flex justify-start space-x-56 pt-16">
+
+      
+                <div class= "text-blue-900 text-2xl ml-36">
+                    Contact us
+      
+                  </div>
+    
+    
+                <div class="text-blue-900 text-2xl">
+                    Location
+                </div>
+
+                </div>
+
+
+                <div class="bg-white flex justify-end">
+                  <div class="bg-white">
+                    <a href="https://instagram.com/twinkle.cakeshop?utm_medium=copy_link"><img class="w-20 mr-16" src="instagram.png" ></a>
+                  </div>
+  
+                  <div class="bg-white">
+                    <a href="https://m.facebook.com/Twinkle.cakeshop.iq/"><img class="w-20 mr-16" src="social-network.png" ></a>
+                  </div>
+                  </div>
+  
+
+
+
+
+
+                <div class="bg-white flex justify-start space-x-36 pb-14 ">
+
+                  <div class="text-black text-xl ml-36 ">
+                    07811815186
+                  </div>
+                  
+    
+                  <div class="text-black text-xl">
+                    ???????? ??????? ?? ????? ??? ????? 
+                    <br>
+                    ?? ????? ??????? ??? ??? ???????
+                   </div>
+
+
+                </div>
+               
+
+        
+
+             
+
+          
+
+         
+
+
+          
+     
+  </div>
+</body>
+</html>
